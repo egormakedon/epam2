@@ -20,8 +20,8 @@ public class Criteria<E> {
 	public void setApplianceType(String applianceType) {
 		this.applianceType = applianceType;
 	}
-		
-	
-	// you may add your own code here
 
+	public Map<E, Object> getCriteria() {
+		return criteria;
+	}
 }
