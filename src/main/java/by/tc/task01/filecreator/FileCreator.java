@@ -4,23 +4,22 @@ import java.io.*;
 import java.util.List;
 
 public class FileCreator {
-    private final String DIRECTORY_PATH = "src/main/resources/";
-
-    public void createFile(String filename) throws FileExistException, FileCreateException {
-        File file = new File(DIRECTORY_PATH + filename);
-        if (!file.exists()) {
-            try {
-                file.createNewFile();
-                printDataToFile(file);
-            } catch (IOException e) {
-                throw new FileCreateException("File hasn't created", e.getCause());
-            }
-        } else {
-            throw new FileExistException("File has already created");
+    public File createFile() {
+        final String FILENAME = "src/main/resources/devices_db.txt";
+        File file = new File(FILENAME);
+        if (file.exists()) {
+            file.delete();
         }
+        try {
+            file.createNewFile();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        addDataToFile(file);
+        return file;
     }
 
-    private void printDataToFile(File file) throws FileCreateException {
+    private void addDataToFile(File file) {
         FileWriter fw = null;
         BufferedWriter bw = null;
         PrintWriter pw = null;
@@ -40,14 +39,12 @@ public class FileCreator {
                         pw.printf("\n");
                     }
                 }
-
                 if (!devices.equals(dataList.get(dataList.size() - 1))) {
                     pw.printf("\n\n");
                 }
             }
-
         } catch (IOException e) {
-            throw new FileCreateException("IOException with Writers", e.getCause());
+            e.printStackTrace();
         } finally {
             if (pw != null) pw.close();
         }
