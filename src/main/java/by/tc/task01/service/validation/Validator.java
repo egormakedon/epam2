@@ -63,53 +63,29 @@ public class Validator {
 
 	private static <E> boolean validationCriteria(Map<E, Object> criteriaMap) {
 		boolean result;
-		switch (criteriaMap.keySet().getClass().getSimpleName()) {
+		switch (criteriaMap.keySet().iterator().next().getClass().getSimpleName()) {
 			case "Oven":
-				result = validationOven(criteriaMap);
+				result = OvenCriteriaValidator.validation(criteriaMap);
 				break;
 			case "Laptop":
-				result = validationLaptop(criteriaMap);
+				result = LaptopCriteriaValidator.validation(criteriaMap);
 				break;
 			case "Refrigerator":
-				result = validationRefrigerator(criteriaMap);
+				result = RefrigeratorCriteriaValidator.validation(criteriaMap);
 				break;
 			case "VacuumCleaner":
-				result = validationVacuumCleaner(criteriaMap);
+				result = VacuumCleanerCriteriaValidator.validation(criteriaMap);
 				break;
 			case "TabletPC":
-				result = validationTabletPC(criteriaMap);
+				result = TabletpcCriteriaValidator.validation(criteriaMap);
 				break;
 			case "Speakers":
-				result = validationSpeakers(criteriaMap);
+				result = SpeakersCriteriaValidator.validation(criteriaMap);
 				break;
 			default:
 				result = false;
 				break;
 		}
 		return result;
-	}
-
-	private static <E> boolean validationOven(Map<E, Object> criteriaMap) {
-
-	}
-
-	private static <E> boolean validationLaptop(Map<E, Object> criteriaMap) {
-
-	}
-
-	private static <E> boolean validationRefrigerator(Map<E, Object> criteriaMap) {
-
-	}
-
-	private static <E> boolean validationVacuumCleaner(Map<E, Object> criteriaMap) {
-
-	}
-
-	private static <E> boolean validationTabletPC(Map<E, Object> criteriaMap) {
-
-	}
-
-	private static <E> boolean validationSpeakers(Map<E, Object> criteriaMap) {
-
 	}
 }

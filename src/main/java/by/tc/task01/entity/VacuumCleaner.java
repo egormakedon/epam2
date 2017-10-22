@@ -2,13 +2,13 @@ package by.tc.task01.entity;
 
 public class VacuumCleaner extends Appliance {
     private int powerConsumption;
-    private char filterType;
+    private String filterType;
     private String bagType;
     private String wandType;
     private int motorSpeedRegulation;
     private int cleaningWidth;
 
-    public VacuumCleaner(int powerConsumption, char filterType, String bagType, String wandType, int motorSpeedRegulation, int cleaningWidth) {
+    public VacuumCleaner(int powerConsumption, String filterType, String bagType, String wandType, int motorSpeedRegulation, int cleaningWidth) {
         this.powerConsumption = powerConsumption;
         this.filterType = filterType;
         this.bagType = bagType;
@@ -21,7 +21,7 @@ public class VacuumCleaner extends Appliance {
         return powerConsumption;
     }
 
-    public char getFilterType() {
+    public String getFilterType() {
         return filterType;
     }
 
@@ -49,9 +49,9 @@ public class VacuumCleaner extends Appliance {
         VacuumCleaner that = (VacuumCleaner) o;
 
         if (powerConsumption != that.powerConsumption) return false;
-        if (filterType != that.filterType) return false;
         if (motorSpeedRegulation != that.motorSpeedRegulation) return false;
         if (cleaningWidth != that.cleaningWidth) return false;
+        if (filterType != null ? !filterType.equals(that.filterType) : that.filterType != null) return false;
         if (bagType != null ? !bagType.equals(that.bagType) : that.bagType != null) return false;
         return wandType != null ? wandType.equals(that.wandType) : that.wandType == null;
     }
@@ -59,7 +59,7 @@ public class VacuumCleaner extends Appliance {
     @Override
     public int hashCode() {
         int result = powerConsumption;
-        result = 31 * result + (int) filterType;
+        result = 31 * result + (filterType != null ? filterType.hashCode() : 0);
         result = 31 * result + (bagType != null ? bagType.hashCode() : 0);
         result = 31 * result + (wandType != null ? wandType.hashCode() : 0);
         result = 31 * result + motorSpeedRegulation;
@@ -71,7 +71,7 @@ public class VacuumCleaner extends Appliance {
     public String toString() {
         return "VacuumCleaner{" +
                 "powerConsumption=" + powerConsumption +
-                ", filterType=" + filterType +
+                ", filterType='" + filterType + '\'' +
                 ", bagType='" + bagType + '\'' +
                 ", wandType='" + wandType + '\'' +
                 ", motorSpeedRegulation=" + motorSpeedRegulation +
