@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6dcf80d-9f89-459f-afaf-3a5e7fbf18a6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/tc/task01/entity/Laptop.java" afterPath="$PROJECT_DIR$/src/main/java/by/tc/task01/entity/Laptop.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/tc/task01/entity/Oven.java" afterPath="$PROJECT_DIR$/src/main/java/by/tc/task01/entity/Oven.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/tc/task01/entity/Refrigerator.java" afterPath="$PROJECT_DIR$/src/main/java/by/tc/task01/entity/Refrigerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/tc/task01/entity/Speakers.java" afterPath="$PROJECT_DIR$/src/main/java/by/tc/task01/entity/Speakers.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/tc/task01/entity/TabletPC.java" afterPath="$PROJECT_DIR$/src/main/java/by/tc/task01/entity/TabletPC.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/tc/task01/entity/VacuumCleaner.java" afterPath="$PROJECT_DIR$/src/main/java/by/tc/task01/entity/VacuumCleaner.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/by/tc/task01/filecreator/FileCreateException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/by/tc/task01/filecreator/FileExistException.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/tc/task01/filecreator/FileData.java" afterPath="$PROJECT_DIR$/src/main/java/by/tc/task01/filecreator/FileData.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,12 +16,66 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Appliance.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Criteria.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/entity/criteria/Criteria.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding>
+                <element signature="e#195#206#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchCriteria.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/entity/criteria/SearchCriteria.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Appliance.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/entity/Appliance.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="devices_db.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/devices_db.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileCreator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/filecreator/FileCreator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileData.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/filecreator/FileData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,7 +105,6 @@
         <option value="$PROJECT_DIR$/src/main/java/by/tc/task01/filecreator/FileCreateException.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/tc/task01/filecreator/FileExistException.java" />
         <option value="$PROJECT_DIR$/src/main/resources/appliances_db.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/by/tc/task01/filecreator/FileData.java" />
         <option value="$PROJECT_DIR$/src/main/resources/devices_db.txt" />
         <option value="$PROJECT_DIR$/src/main/java/by/tc/task01/filecreator/FileCreator.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/tc/task01/dao/DAOFactory.java" />
@@ -67,6 +116,7 @@
         <option value="$PROJECT_DIR$/src/main/java/by/tc/task01/entity/Speakers.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/tc/task01/entity/TabletPC.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/tc/task01/entity/VacuumCleaner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/tc/task01/filecreator/FileData.java" />
       </list>
     </option>
   </component>
@@ -153,7 +203,9 @@
               <item name="jwd-task01-template" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="task01" type="462c0819:PsiDirectoryNode" />
+              <item name="filecreator" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -302,12 +354,12 @@
       <updated>1508271799525</updated>
       <workItem from="1508271800710" duration="17468000" />
       <workItem from="1508536511791" duration="608000" />
-      <workItem from="1508685170526" duration="1578000" />
+      <workItem from="1508685170526" duration="2550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19654000" />
+    <option name="totallyTimeSpent" value="20626000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1920" height="1035" extended-state="6" />
@@ -421,20 +473,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resourcesdevices_db.txt" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/filecreator/FileCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/filecreator/FileData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="38" column="41" lean-forward="false" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/dao/impl/ApplianceDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -453,13 +491,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/entity/criteria/SearchCriteria.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -503,16 +534,6 @@
         <state relative-caret-position="252">
           <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="31" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/entity/criteria/Criteria.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#195#206#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -623,14 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/devices_db.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/entity/VacuumCleaner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -657,6 +670,50 @@
         <state relative-caret-position="90">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/entity/criteria/SearchCriteria.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/entity/criteria/Criteria.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="e#195#206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/filecreator/FileCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/devices_db.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/filecreator/FileData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
