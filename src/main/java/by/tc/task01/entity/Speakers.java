@@ -1,46 +1,23 @@
 package by.tc.task01.entity;
 
 public class Speakers extends Appliance {
-    private static long idCounter = 0;
-    private long speakersId;
-    private short powerConsumption;
-    private short numberOfSpeakers;
+    private int powerConsumption;
+    private int numberOfSpeakers;
     private String frequencyRange;
-    private short cordLength;
+    private int cordLength;
 
-    public Speakers(short powerConsumption, short numberOfSpeakers, String frequencyRange, short cordLength) {
-        speakersId = incrementIdCounter();
+    public Speakers(int powerConsumption, int numberOfSpeakers, String frequencyRange, int cordLength) {
         this.powerConsumption = powerConsumption;
         this.numberOfSpeakers = numberOfSpeakers;
         this.frequencyRange = frequencyRange;
         this.cordLength = cordLength;
     }
 
-    public void setPowerConsumption(short powerConsumption) {
-        this.powerConsumption = powerConsumption;
-    }
-
-    public void setNumberOfSpeakers(short numberOfSpeakers) {
-        this.numberOfSpeakers = numberOfSpeakers;
-    }
-
-    public void setFrequencyRange(String frequencyRange) {
-        this.frequencyRange = frequencyRange;
-    }
-
-    public void setCordLength(short cordLength) {
-        this.cordLength = cordLength;
-    }
-
-    public long getSpeakersId() {
-        return speakersId;
-    }
-
-    public short getPowerConsumption() {
+    public int getPowerConsumption() {
         return powerConsumption;
     }
 
-    public short getNumberOfSpeakers() {
+    public int getNumberOfSpeakers() {
         return numberOfSpeakers;
     }
 
@@ -48,19 +25,8 @@ public class Speakers extends Appliance {
         return frequencyRange;
     }
 
-    public short getCordLength() {
+    public int getCordLength() {
         return cordLength;
-    }
-
-    @Override
-    public String toString() {
-        return "Speakers{" +
-                "speakersId=" + speakersId +
-                ", powerConsumption=" + powerConsumption +
-                ", numberOfSpeakers=" + numberOfSpeakers +
-                ", frequencyRange='" + frequencyRange + '\'' +
-                ", cordLength=" + cordLength +
-                '}';
     }
 
     @Override
@@ -70,7 +36,6 @@ public class Speakers extends Appliance {
 
         Speakers speakers = (Speakers) o;
 
-        if (speakersId != speakers.speakersId) return false;
         if (powerConsumption != speakers.powerConsumption) return false;
         if (numberOfSpeakers != speakers.numberOfSpeakers) return false;
         if (cordLength != speakers.cordLength) return false;
@@ -79,15 +44,20 @@ public class Speakers extends Appliance {
 
     @Override
     public int hashCode() {
-        int result = (int) (speakersId ^ (speakersId >>> 32));
-        result = 31 * result + (int) powerConsumption;
-        result = 31 * result + (int) numberOfSpeakers;
+        int result = powerConsumption;
+        result = 31 * result + numberOfSpeakers;
         result = 31 * result + (frequencyRange != null ? frequencyRange.hashCode() : 0);
-        result = 31 * result + (int) cordLength;
+        result = 31 * result + cordLength;
         return result;
     }
 
-    private long incrementIdCounter() {
-        return ++idCounter;
+    @Override
+    public String toString() {
+        return "Speakers{" +
+                "powerConsumption=" + powerConsumption +
+                ", numberOfSpeakers=" + numberOfSpeakers +
+                ", frequencyRange='" + frequencyRange + '\'' +
+                ", cordLength=" + cordLength +
+                '}';
     }
 }
