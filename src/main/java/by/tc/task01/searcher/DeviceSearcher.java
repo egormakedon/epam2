@@ -1,6 +1,7 @@
 package by.tc.task01.searcher;
 
 import by.tc.task01.entity.criteria.Criteria;
+import by.tc.task01.parser.DeviceParser;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -10,7 +11,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class DeviceSearcher {
-    public <E> String search(File deviceFile, Criteria<E> criteria) {
+    public <E> List<String> search(File deviceFile, Criteria<E> criteria) {
         List<String> criteriaList = createCriteriaList(criteria);
         return scanFile(deviceFile, criteriaList);
     }
@@ -30,16 +31,20 @@ public class DeviceSearcher {
         return criteriaList;
     }
 
-    private String scanFile(File deviceFile, List<String> criteriaList) {
-        String foundDevice = null;
+    private List<String> scanFile(File deviceFile, List<String> criteriaList) {
+        List<String> foundDevice = null;
         Scanner sc = null;
         try {
             sc = new Scanner(deviceFile);
             while (sc.hasNextLine()) {
                 final String DATA = sc.nextLine();
                 final String DATA_UPPER_CASE = DATA.toUpperCase();
-                if (isDataSatisfyCriteria(DATA_UPPER_CASE, criteriaList)) {
-                    foundDevice = DATA;
+
+                DeviceParser deviceParser = new DeviceParser();
+                List<String> dataList = deviceParser.parseDataFromFile(DATA_UPPER_CASE);
+
+                if (isDataSatisfyCriteria(dataList, criteriaList)) {
+                    foundDevice = dataList;
                     break;
                 }
             }
@@ -52,10 +57,10 @@ public class DeviceSearcher {
         return foundDevice;
     }
 
-    private boolean isDataSatisfyCriteria(final String DATA, List<String> criteriaList) {
+    private boolean isDataSatisfyCriteria(List<String> dataList, List<String> criteriaList) {
         boolean result = true;
         for (String criteria : criteriaList) {
-            if (!DATA.contains(criteria)) {
+            if (!dataList.contains(criteria)) {
                 result = false;
                 break;
             }

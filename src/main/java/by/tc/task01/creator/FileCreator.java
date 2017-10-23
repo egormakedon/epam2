@@ -1,4 +1,4 @@
-package by.tc.task01.filecreator;
+package by.tc.task01.creator;
 
 import java.io.*;
 import java.util.List;
