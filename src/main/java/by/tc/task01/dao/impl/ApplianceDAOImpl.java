@@ -16,9 +16,9 @@ public class ApplianceDAOImpl implements ApplianceDAO{
 		File deviceFile = fileCreator.createFile();
 
 		DeviceSearcher deviceSearcher = new DeviceSearcher();
-		String foundInfo = deviceSearcher.search(deviceFile, criteria);
+		String foundDevice = deviceSearcher.search(deviceFile, criteria);
 
-		if (foundInfo == null) return null;
+		if (foundDevice == null) return null;
 
 		return null;///
 	}
