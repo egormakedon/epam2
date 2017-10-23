@@ -18,11 +18,14 @@ public class DeviceSearcher {
     private <E> List<String> createCriteriaList(Criteria<E> criteria) {
         List<String> criteriaList = new ArrayList<String>();
         if (criteria.getApplianceType() != null) {
-            criteriaList.add(criteria.getApplianceType());
+            final String APPLIANCE_TYPE = criteria.getApplianceType();
+            final String APPLIANCE_TYPE_UPPER_CASE = APPLIANCE_TYPE.toUpperCase();
+            criteriaList.add(APPLIANCE_TYPE_UPPER_CASE);
         }
         for (Map.Entry entry : criteria.getCriteria().entrySet()) {
             final String STRING = entry.getKey().toString() + "=" + entry.getValue().toString();
-            criteriaList.add(STRING);
+            final String STRING_UPPER_CASE = STRING.toUpperCase();
+            criteriaList.add(STRING_UPPER_CASE);
         }
         return criteriaList;
     }
@@ -34,7 +37,8 @@ public class DeviceSearcher {
             sc = new Scanner(deviceFile);
             while (sc.hasNextLine()) {
                 final String DATA = sc.nextLine();
-                if (isDataSatisfyCriteria(DATA, criteriaList)) {
+                final String DATA_UPPER_CASE = DATA.toUpperCase();
+                if (isDataSatisfyCriteria(DATA_UPPER_CASE, criteriaList)) {
                     foundDevice = DATA;
                     break;
                 }
