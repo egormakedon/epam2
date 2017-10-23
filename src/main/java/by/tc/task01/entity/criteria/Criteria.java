@@ -21,7 +21,5 @@ public class Criteria<E> {
 		this.applianceType = applianceType;
 	}
 
-	public Map<E, Object> getCriteria() {
-		return criteria;
-	}
+	public Map<E, Object> getCriteria() { return criteria; }
 }
